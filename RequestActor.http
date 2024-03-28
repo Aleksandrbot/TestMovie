@@ -1,0 +1,36 @@
+GET http://localhost:8080/actors/show
+Accept: application/json
+
+###
+
+GET http://localhost:8080/actors/show/1
+Accept: application/json
+
+###
+
+POST http://localhost:8080/actors/save
+Content-Type: application/json
+
+{
+  "name": "Имя",
+  "surname": "Фамилия",
+  "role": "Роль",
+  "movie_id": 3
+}
+
+###
+
+PUT http://localhost:8080/actors/update/11
+Content-Type: application/json
+
+{
+  "name": "Новое Имя",
+  "surname": "Новая Фамилия",
+  "role": "Новая Роль",
+  "movie_id": 3
+}
+
+###
+
+DELETE http://localhost:8080/actors/delete/11
+Content-Type: application/json

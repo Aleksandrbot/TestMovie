@@ -1,0 +1,14 @@
+GET http://localhost:8080/movies/searchByTitle?word=миля
+Accept: application/json
+###
+
+GET http://localhost:8080/movies/searchByGenre?genre=Комедия
+Accept: application/json
+
+###
+
+GET http://localhost:8080/movies/searchByActorSurname?surname=Хайек
+Accept: application/json
+
+###
+
