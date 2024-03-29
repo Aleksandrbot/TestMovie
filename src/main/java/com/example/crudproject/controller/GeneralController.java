@@ -85,9 +85,9 @@ public class GeneralController {
     //Метод-форма для редактирования фильмов с актёрами
     @GetMapping("/updateMovieWithActors/{id}")
     public String showUpdateMovieForm(@PathVariable Long id, Model model) {
-        Movie movie = movieService.getMovieWithActors(id); // или другой подходящий метод для получения фильма
+        Movie movie = movieService.getMovieWithActors(id); 
         model.addAttribute("movie", movie);
-        return "updateMovie"; // предполагается, что есть форма updateMovie.html
+        return "updateMovie"; 
     }
 
     //Метод для редактирования фильмов с актёрами
